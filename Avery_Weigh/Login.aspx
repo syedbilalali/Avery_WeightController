@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Avery Weigh Tronix - Login</title>
+<title>Avery Weigh Tronix - Login Panel</title>
 <link href="/css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/css/fonts.css" type="text/css" charset="utf-8" />
 <link rel="icon" href="/images/favicon.png" type="image/gif" sizes="16x16" />
