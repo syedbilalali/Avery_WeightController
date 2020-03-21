@@ -20,10 +20,9 @@ namespace Avery_Weigh.VC
         {
 
         }
-
         protected void LnkSave_Click(object sender, EventArgs e)
         {
-            if (FileUpload1.HasFile)
+            if(FileUpload1.HasFile)
             {
                 if (FileUpload1.PostedFile.ContentType == "application/vnd.ms-excel" || FileUpload1.PostedFile.ContentType == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
                 {
@@ -45,7 +44,7 @@ namespace Avery_Weigh.VC
                         con.Open();
                     }
                     string sheet1 = con.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null).Rows[0]["TABLE_NAME"].ToString();
-                    string query = "select *from [" + sheet1 + "]";
+                    string query = "select * from [" + sheet1 + "]";
                     OleDbCommand cmd = new OleDbCommand(query, con);
                     OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                     DataSet ds = new DataSet();
